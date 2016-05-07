@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F4F370A1CDD73B80093D6FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F37091CDD73B80093D6FE /* Constants.swift */; };
+		1F4F370C1CDDA1DA0093D6FE /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F370B1CDDA1DA0093D6FE /* SignUpVC.swift */; };
+		1F4F370E1CDDA2240093D6FE /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F370D1CDDA2240093D6FE /* LoginVC.swift */; };
+		1F4F37101CDDB0CE0093D6FE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F370F1CDDB0CE0093D6FE /* GradientView.swift */; };
+		1F4F37121CDDDAEB0093D6FE /* dismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F37111CDDDAEB0093D6FE /* dismissKeyboard.swift */; };
 		1F696C9A1CDD15AF00D05B3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F696C991CDD15AF00D05B3B /* AppDelegate.swift */; };
-		1F696C9C1CDD15AF00D05B3B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F696C9B1CDD15AF00D05B3B /* FirstViewController.swift */; };
-		1F696C9E1CDD15AF00D05B3B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F696C9D1CDD15AF00D05B3B /* SecondViewController.swift */; };
 		1F696CA11CDD15AF00D05B3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F696C9F1CDD15AF00D05B3B /* Main.storyboard */; };
 		1F696CA31CDD15AF00D05B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F696CA21CDD15AF00D05B3B /* Assets.xcassets */; };
 		1F696CA61CDD15AF00D05B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F696CA41CDD15AF00D05B3B /* LaunchScreen.storyboard */; };
+		1F696CB11CDD2D7A00D05B3B /* CAGradientLayerConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F696CB01CDD2D7A00D05B3B /* CAGradientLayerConvenience.swift */; };
+		1F696CB71CDD3B0100D05B3B /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F696CB61CDD3B0100D05B3B /* LoginTextField.swift */; };
+		1F696CB91CDD447600D05B3B /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F696CB81CDD447600D05B3B /* LoginButton.swift */; };
+		1F696CC01CDD663D00D05B3B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F696CBF1CDD663D00D05B3B /* DataService.swift */; };
+		7DEC4CD6125EBF74B0B205C2 /* Pods_make_footprints_great_again.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF5A0C5E868982BB2EB9697 /* Pods_make_footprints_great_again.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F4F37091CDD73B80093D6FE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1F4F370B1CDDA1DA0093D6FE /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		1F4F370D1CDDA2240093D6FE /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		1F4F370F1CDDB0CE0093D6FE /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		1F4F37111CDDDAEB0093D6FE /* dismissKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dismissKeyboard.swift; sourceTree = "<group>"; };
 		1F696C961CDD15AF00D05B3B /* make-footprints-great-again.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "make-footprints-great-again.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F696C991CDD15AF00D05B3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F696C9B1CDD15AF00D05B3B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		1F696C9D1CDD15AF00D05B3B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		1F696CA01CDD15AF00D05B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F696CA21CDD15AF00D05B3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F696CA51CDD15AF00D05B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F696CA71CDD15AF00D05B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F696CB01CDD2D7A00D05B3B /* CAGradientLayerConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGradientLayerConvenience.swift; sourceTree = "<group>"; };
+		1F696CB61CDD3B0100D05B3B /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		1F696CB81CDD447600D05B3B /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		1F696CBF1CDD663D00D05B3B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		246B0E2B66F78CE55EB39EAA /* Pods-make-footprints-great-again.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-make-footprints-great-again.debug.xcconfig"; path = "Pods/Target Support Files/Pods-make-footprints-great-again/Pods-make-footprints-great-again.debug.xcconfig"; sourceTree = "<group>"; };
+		6CF5A0C5E868982BB2EB9697 /* Pods_make_footprints_great_again.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_make_footprints_great_again.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CF665B3CE267BA1DBE96C4 /* Pods-make-footprints-great-again.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-make-footprints-great-again.release.xcconfig"; path = "Pods/Target Support Files/Pods-make-footprints-great-again/Pods-make-footprints-great-again.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DEC4CD6125EBF74B0B205C2 /* Pods_make_footprints_great_again.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F4F37041CDD6B7A0093D6FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F4F37081CDD6FBC0093D6FE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1F4F37091CDD73B80093D6FE /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		1F696C8D1CDD15AF00D05B3B = {
 			isa = PBXGroup;
 			children = (
 				1F696C981CDD15AF00D05B3B /* make-footprints-great-again */,
 				1F696C971CDD15AF00D05B3B /* Products */,
+				CF1C1590AD254C5FFA59E907 /* Pods */,
+				CCA7CEABEAF2DCD019907256 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +92,72 @@
 		1F696C981CDD15AF00D05B3B /* make-footprints-great-again */ = {
 			isa = PBXGroup;
 			children = (
+				1F4F37081CDD6FBC0093D6FE /* Util */,
+				1F4F37041CDD6B7A0093D6FE /* Frameworks */,
+				1F696CBE1CDD662800D05B3B /* Services */,
+				1F696CAD1CDD15C500D05B3B /* Model */,
+				1F696CAE1CDD15CB00D05B3B /* View */,
+				1F696CAF1CDD15D900D05B3B /* Controller */,
 				1F696C991CDD15AF00D05B3B /* AppDelegate.swift */,
-				1F696C9B1CDD15AF00D05B3B /* FirstViewController.swift */,
-				1F696C9D1CDD15AF00D05B3B /* SecondViewController.swift */,
-				1F696C9F1CDD15AF00D05B3B /* Main.storyboard */,
 				1F696CA21CDD15AF00D05B3B /* Assets.xcassets */,
-				1F696CA41CDD15AF00D05B3B /* LaunchScreen.storyboard */,
 				1F696CA71CDD15AF00D05B3B /* Info.plist */,
 			);
 			path = "make-footprints-great-again";
+			sourceTree = "<group>";
+		};
+		1F696CAD1CDD15C500D05B3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1F696CAE1CDD15CB00D05B3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F696C9F1CDD15AF00D05B3B /* Main.storyboard */,
+				1F696CA41CDD15AF00D05B3B /* LaunchScreen.storyboard */,
+				1F696CB61CDD3B0100D05B3B /* LoginTextField.swift */,
+				1F696CB81CDD447600D05B3B /* LoginButton.swift */,
+				1F4F370F1CDDB0CE0093D6FE /* GradientView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1F696CAF1CDD15D900D05B3B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F696CB01CDD2D7A00D05B3B /* CAGradientLayerConvenience.swift */,
+				1F4F370B1CDDA1DA0093D6FE /* SignUpVC.swift */,
+				1F4F370D1CDDA2240093D6FE /* LoginVC.swift */,
+				1F4F37111CDDDAEB0093D6FE /* dismissKeyboard.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1F696CBE1CDD662800D05B3B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F696CBF1CDD663D00D05B3B /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		CCA7CEABEAF2DCD019907256 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CF5A0C5E868982BB2EB9697 /* Pods_make_footprints_great_again.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1C1590AD254C5FFA59E907 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				246B0E2B66F78CE55EB39EAA /* Pods-make-footprints-great-again.debug.xcconfig */,
+				C8CF665B3CE267BA1DBE96C4 /* Pods-make-footprints-great-again.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F696CAA1CDD15AF00D05B3B /* Build configuration list for PBXNativeTarget "make-footprints-great-again" */;
 			buildPhases = (
+				5A56CDDBB3EFF41CF52CDE26 /* Check Pods Manifest.lock */,
 				1F696C921CDD15AF00D05B3B /* Sources */,
 				1F696C931CDD15AF00D05B3B /* Frameworks */,
 				1F696C941CDD15AF00D05B3B /* Resources */,
+				2B54D02B01AB6B07E545C46B /* Embed Pods Frameworks */,
+				3F540601D525F5DAA0426498 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +229,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B54D02B01AB6B07E545C46B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-make-footprints-great-again/Pods-make-footprints-great-again-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F540601D525F5DAA0426498 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-make-footprints-great-again/Pods-make-footprints-great-again-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A56CDDBB3EFF41CF52CDE26 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F696C921CDD15AF00D05B3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F696C9E1CDD15AF00D05B3B /* SecondViewController.swift in Sources */,
+				1F4F370C1CDDA1DA0093D6FE /* SignUpVC.swift in Sources */,
+				1F4F37121CDDDAEB0093D6FE /* dismissKeyboard.swift in Sources */,
+				1F696CB91CDD447600D05B3B /* LoginButton.swift in Sources */,
+				1F696CC01CDD663D00D05B3B /* DataService.swift in Sources */,
+				1F696CB71CDD3B0100D05B3B /* LoginTextField.swift in Sources */,
+				1F4F370E1CDDA2240093D6FE /* LoginVC.swift in Sources */,
+				1F4F370A1CDD73B80093D6FE /* Constants.swift in Sources */,
 				1F696C9A1CDD15AF00D05B3B /* AppDelegate.swift in Sources */,
-				1F696C9C1CDD15AF00D05B3B /* FirstViewController.swift in Sources */,
+				1F696CB11CDD2D7A00D05B3B /* CAGradientLayerConvenience.swift in Sources */,
+				1F4F37101CDDB0CE0093D6FE /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +404,13 @@
 		};
 		1F696CAB1CDD15AF00D05B3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246B0E2B66F78CE55EB39EAA /* Pods-make-footprints-great-again.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "make-footprints-great-again/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rohitbhaskar.make-footprints-great-again";
@@ -264,8 +420,13 @@
 		};
 		1F696CAC1CDD15AF00D05B3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8CF665B3CE267BA1DBE96C4 /* Pods-make-footprints-great-again.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "make-footprints-great-again/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rohitbhaskar.make-footprints-great-again";
@@ -292,6 +453,7 @@
 				1F696CAC1CDD15AF00D05B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
