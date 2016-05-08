@@ -14,6 +14,7 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var imageField: UIImageView!
+    @IBOutlet weak var addProfilePicButton: UIButton!
     
     var imagePicker: UIImagePickerController!
     
@@ -41,10 +42,31 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
     }
     
     @IBAction func signUpPressed(sender: UIButton) {
+        if let name = nameField.text where name != "", let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
+            DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { error, authData in
+                if error != nil {
+                    print(error)
+                    if error.code == STATUS_ACCOUNT_NONEXIST {
+                        DataService.ds.REF_BASE.createUser(email, password: pwd, withValueCompletionBlock: { error, result in
+                            if error != nil{
+                                self.showErrorAlert("Could not create account", msg: "Problem creating account. Try something else")
+                            }else{
+                                NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID], forKey: KEY_UID)
+                                
+                                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: nil)
+                                self.performSegueWithIdentifier(SEGUE_SIGNED_IN, sender: nil)
+                            }
+                        })
+                    }
+                }
+            })
+        }else{
+            showErrorAlert("Incomplete Fields", msg: "You must complete all fields to sign up")
+        }
     }
     
     @IBAction func addPicPressed(sender: AnyObject) {
-        sender.setTitle("", forState: .Normal)
+        addProfilePicButton.hidden = true
         presentViewController(imagePicker, animated: true, completion: nil)
     }
     
@@ -57,6 +79,15 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         self.view.endEditing(true)
         return false
     }
+    
+    //MARK :- Alert dialogue box popper
+    func showErrorAlert(title: String, msg: String) {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
+    }
+
     
 
 }

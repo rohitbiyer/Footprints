@@ -64,28 +64,6 @@
                                 </state>
                                 <connections>
                                     <action selector="attemptedLogIn:" destination="o0x-4o-OBd" eventType="touchUpInside" id="9cc-hu-oPI"/>
-                                    <segue destination="4yD-eb-oE1" kind="show" identifier="loggedIn" id="1UH-ep-RD5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhl-68-Y7s" customClass="LoginButton" customModule="make_footprints_great_again" customModuleProvider="target">
-                                <rect key="frame" x="250" y="466" width="100" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="9TR-Ox-yrs"/>
-                                    <constraint firstAttribute="height" constant="30" id="BnB-5y-ja8"/>
-                                    <constraint firstAttribute="height" constant="40" id="GoF-hI-idf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="BnB-5y-ja8"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <segue destination="Rfp-Ab-1Pq" kind="show" identifier="signUp" id="UDa-aa-mYM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAG-dF-VBV">
@@ -123,6 +101,27 @@
                                     <constraint firstAttribute="height" constant="128" id="sZu-16-5q4"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhl-68-Y7s" customClass="LoginButton" customModule="make_footprints_great_again" customModuleProvider="target">
+                                <rect key="frame" x="250" y="464" width="100" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9TR-Ox-yrs"/>
+                                    <constraint firstAttribute="height" constant="30" id="BnB-5y-ja8"/>
+                                    <constraint firstAttribute="height" constant="40" id="GoF-hI-idf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BnB-5y-ja8"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="Rfp-Ab-1Pq" kind="show" id="lIs-ft-7dZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -158,11 +157,12 @@
                     <connections>
                         <outlet property="emailField" destination="gLy-XM-5An" id="btd-N2-GEe"/>
                         <outlet property="passwordField" destination="Zgg-ve-oWI" id="aRD-Df-Gad"/>
+                        <segue destination="4yD-eb-oE1" kind="show" identifier="loggedIn" id="hgO-3i-vZI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7QE-hm-cW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922" y="-418"/>
+            <point key="canvasLocation" x="1579" y="93"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="cec-n6-0Cu">
@@ -245,28 +245,6 @@
                                                     </mask>
                                                 </variation>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAQ-iW-A7v" customClass="LoginButton" customModule="make_footprints_great_again" customModuleProvider="target">
-                                                <rect key="frame" x="351" y="490" width="100" height="40"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="9Z4-DL-dRd"/>
-                                                    <constraint firstAttribute="height" constant="40" id="bsZ-oB-BfK"/>
-                                                    <constraint firstAttribute="width" constant="100" id="oqa-1k-3nT"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                <state key="normal" title="Sign Up">
-                                                    <color key="titleColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="9Z4-DL-dRd"/>
-                                                    </mask>
-                                                </variation>
-                                                <connections>
-                                                    <action selector="onBackPressed:" destination="Rfp-Ab-1Pq" eventType="touchUpInside" id="wns-pQ-KBt"/>
-                                                    <action selector="signUpPressed:" destination="Rfp-Ab-1Pq" eventType="touchUpInside" id="Udc-He-Go4"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06q-LG-hFs" customClass="LoginButton" customModule="make_footprints_great_again" customModuleProvider="target">
                                                 <rect key="frame" x="150" y="490" width="100" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -288,14 +266,13 @@
                                                     <action selector="onBackPressed:" destination="Rfp-Ab-1Pq" eventType="touchUpInside" id="dN4-pk-o9F"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsJ-DV-DAj">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsJ-DV-DAj">
                                                 <rect key="frame" x="200" y="90" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="AP7-TE-e5U"/>
                                                     <constraint firstAttribute="height" constant="200" id="KSV-A8-JAr"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                                <state key="normal" title="+Add Pic">
+                                                <state key="normal" image="add_user-512">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -319,6 +296,27 @@
                                                     </mask>
                                                 </variation>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAQ-iW-A7v" customClass="LoginButton" customModule="make_footprints_great_again" customModuleProvider="target">
+                                                <rect key="frame" x="351" y="490" width="100" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="9Z4-DL-dRd"/>
+                                                    <constraint firstAttribute="height" constant="40" id="bsZ-oB-BfK"/>
+                                                    <constraint firstAttribute="width" constant="100" id="oqa-1k-3nT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Sign Up">
+                                                    <color key="titleColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="9Z4-DL-dRd"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="signUpPressed:" destination="Rfp-Ab-1Pq" eventType="touchUpInside" id="Udc-He-Go4"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -403,15 +401,17 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
+                        <outlet property="addProfilePicButton" destination="WsJ-DV-DAj" id="86W-iV-OEj"/>
                         <outlet property="emailField" destination="Dwb-la-Ksr" id="YYW-P8-KHp"/>
                         <outlet property="imageField" destination="v4r-wB-0Cg" id="NsB-8f-RJR"/>
                         <outlet property="nameField" destination="TlC-WL-OvP" id="5ey-dX-7ki"/>
                         <outlet property="passwordField" destination="ZFT-cS-H9A" id="ulH-Ha-5EC"/>
+                        <segue destination="4yD-eb-oE1" kind="show" identifier="signedIn" id="hf0-v5-UUo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZaT-nA-EhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3035" y="-427"/>
+            <point key="canvasLocation" x="2257" y="771"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="IO0-KL-qIN">
@@ -422,7 +422,7 @@
                         <viewControllerLayoutGuide type="bottom" id="uye-2Y-PjR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="L3h-L9-SB8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -441,7 +441,7 @@
                         <viewControllerLayoutGuide type="bottom" id="HgO-Eb-cng"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EEx-aq-JHs">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -449,7 +449,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eo4-7t-bM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2728" y="653"/>
+            <point key="canvasLocation" x="3792" y="1173"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="O7R-u7-FnB">
@@ -467,10 +467,14 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PgM-gK-zJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="511"/>
+            <point key="canvasLocation" x="1610" y="1106"/>
         </scene>
     </scenes>
     <resources>
+        <image name="add_user-512" width="512" height="512"/>
         <image name="footprint-clip-art-black-and-white_231031 copy" width="730" height="616"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hf0-v5-UUo"/>
+    </inferredMetricsTieBreakers>
 </document>

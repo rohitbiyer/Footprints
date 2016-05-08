@@ -36,28 +36,12 @@ class LoginVC: UIViewController, UITextFieldDelegate{
         }
     }
 
-    
     // MARK : User auth attempt
     @IBAction func attemptedLogIn(sender: UIButton!) {
         if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
             DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { error, authData in
                 if error != nil {
-//                    print(error)
-//                    if error.code == STATUS_ACCOUNT_NONEXIST {
-//                        DataService.ds.REF_BASE.createUser(email, password: pwd, withValueCompletionBlock: { error, result in
-//                            if error != nil{
-//                                self.showErrorAlert("Could not create account", msg: "Problem creating account. Try something else")
-//                            }else{
-//                                NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID], forKey: KEY_UID)
-//                                
-//                                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: nil)
-//                                self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
-//                                
-//                            }
-//                        })
-//                    }else{
-                        self.showErrorAlert("Could not log in", msg: "Please check your username or password")
-                    //}
+                    self.showErrorAlert("Could not log in", msg: "Please check your username or password")
                 }else{
                     self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                 }
@@ -65,7 +49,6 @@ class LoginVC: UIViewController, UITextFieldDelegate{
         }else{
             showErrorAlert("Email and Password Required", msg: "You must enter an email and a password")
         }
-        
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
